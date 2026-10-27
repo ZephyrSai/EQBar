@@ -1,0 +1,21 @@
+EQBar
+Copyright 2026 ZephyrSai (https://github.com/ZephyrSai)
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+EQBar is a ground-up rewrite inspired by eqMac:
+  eqMac — https://github.com/bitgapp/eqMac
+  Copyright (c) Roman Kisil (Nodeful) / Bitgapp Ltd.
+  Licensed under the Apache License, Version 2.0.
+  EQBar re-implements eqMac's feature set (Basic / Advanced / Expert EQ, volume boost and balance,
+  per-app volume, Audio Unit hosting, spatial rooms, AutoEQ integration) and reads eqMac's exported
+  preset format. No eqMac source code is included.
+
+Headphone correction profiles are downloaded at runtime from AutoEq:
+  AutoEq — https://github.com/jaakkopasanen/AutoEq
+  Copyright (c) 2018-2022 Jaakko Pasanen. Licensed under the MIT License.
+  EQBar does not bundle AutoEq data.
+
+Algorithms:
+  Biquad filters follow Robert Bristow-Johnson's "Audio EQ Cookbook".
+  Crossfeed follows Boris Mikhaylov's bs2b (Bauer stereophonic-to-binaural) design.
+  Spatial rendering uses Apple's AUSpatialMixer system component.

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleExecutable</key>
+	<string>EQBar</string>
+	<key>CFBundleIdentifier</key>
+	<string>__BUNDLE_ID__</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>EQBar</string>
+	<key>CFBundleDisplayName</key>
+	<string>EQBar</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>__VERSION__</string>
+	<key>CFBundleVersion</key>
+	<string>__BUILD__</string>
+	<key>CFBundleIconFile</key>
+	<string>AppIcon</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>14.4</string>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.music</string>
+	<key>LSUIElement</key>
+	<true/>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+	<key>NSHighResolutionCapable</key>
+	<true/>
+	<key>LSEnvironment</key>
+	<dict>
+		<!-- Space-efficient malloc: ~3 MB less at idle and ~10 MB less once the menu has been opened.
+		     EQBar's audio thread never allocates, so the speed trade-off doesn't matter. -->
+		<key>MallocSpaceEfficient</key>
+		<string>1</string>
+	</dict>
+	<key>NSAudioCaptureUsageDescription</key>
+	<string>EQBar processes your Mac's sound output to apply equalization, spatial audio and volume. Audio is processed on your Mac and never recorded or sent anywhere.</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>© 2026 ZephyrSai. Apache License 2.0. Inspired by eqMac by Roman Kisil.</string>
+</dict>
+</plist>
