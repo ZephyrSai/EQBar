@@ -100,13 +100,13 @@ h1{font-size:clamp(42px,6.2vw,80px);line-height:1.02;letter-spacing:-.04em;font-
 
 .hv{position:relative;height:660px}
 .hv [data-depth]{transition:translate .8s var(--ease)}
-.mbar{position:absolute;left:0;right:0;top:0;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:flex-end;gap:16px;padding:0 16px;
+.mbar{position:absolute;left:0;right:0;top:0;height:40px;border-radius:12px;display:flex;white-space:nowrap;overflow:hidden;align-items:center;justify-content:flex-end;gap:16px;padding:0 16px;
   background:color-mix(in srgb,var(--card2) 82%,transparent);border:1px solid var(--line);font-size:14px;font-weight:600;color:var(--body);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:var(--shadow)}
 .mbar .l{margin-right:auto;display:flex;gap:18px;color:var(--muted)}
 .mbar .l b{color:var(--text)}
 .mbar .sv{width:18px;height:18px;color:var(--body)}
 .mbar .me{width:36px;height:26px;border-radius:7px;background:color-mix(in srgb,var(--text) 13%,transparent);display:grid;place-items:center}
-.mbar .clock{width:84px;text-align:right;font-variant-numeric:tabular-nums}
+.mbar .clock{width:84px;white-space:nowrap;text-align:right;font-variant-numeric:tabular-nums}
 .hv .panel{position:absolute;top:50px;right:3px;width:400px}
 .shot{filter:drop-shadow(0 30px 40px rgba(0,0,0,.35)) drop-shadow(0 6px 12px rgba(0,0,0,.18))}
 .fchip{position:relative;white-space:nowrap;display:flex;align-items:center;gap:12px;padding:12px 16px 12px 12px;border-radius:16px;background:color-mix(in srgb,var(--card) 88%,transparent);border:1px solid var(--line);box-shadow:var(--shadow2);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
